@@ -1,0 +1,49 @@
+.contacts-block {
+   display: flex;
+   margin-left: auto;
+}
+
+.contacts {
+   display: flex;
+   align-items: center;
+   margin-left: 30px;
+
+   letter-spacing: 0.02em;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.1;
+   color: $secondary-text-color;
+   text-decoration: none;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      color: $accent-color;
+   }
+   &:first-child {
+      margin-left: 0;
+   }
+
+   &-icon {
+      fill: currentColor;
+      margin-right: 10px;
+   }
+}
+.footer .contacts {
+   display: block;
+   margin: 0;
+   color: rgba(255, 255, 255, 0.6);
+   font-weight: 400;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+   text-decoration: none;
+   text-align: left;
+   font-style: normal;
+   &:hover,
+   &:focus {
+      color: $accent-color;
+   }
+}
+.footer .first {
+   margin-bottom: 10px;
+}

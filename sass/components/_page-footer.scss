@@ -1,0 +1,103 @@
+.footer {
+   background-color: $bg-secondary-color;
+   padding-bottom: 60px;
+   padding-top: 60px;
+   & .container {
+      display: flex;
+      align-items: baseline;
+   }
+   &-list {
+      margin-left: 0;
+      margin-right: 0;
+   }
+
+   &-link {
+      color: $white-main-color;
+      background-color: rgba(255, 255, 255, 0.1);
+   }
+   &-text {
+      display: block;
+      margin-bottom: 20px;
+
+      text-align: left;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white-main-color;
+   }
+}
+.footer-address {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   &-name {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.7;
+      font-style: normal;
+      color: $white-main-color;
+      letter-spacing: 0.03em;
+      text-align: left;
+   }
+}
+
+.join-in {
+   margin-left: 70px;
+   margin-right: 93px;
+}
+
+.footer-text {
+   display: block;
+   margin-bottom: 20px;
+
+   text-align: left;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: $white-main-color;
+}
+
+.subscribe-field {
+   display: flex;
+   & .button {
+      display: inline-flex;
+      align-items: center;
+   }
+   & .button::after {
+      content: "";
+
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+
+      background-image: url(../img/icon-send.svg);
+   }
+}
+
+.subscribe-input {
+   width: 358px;
+   padding: 15px 16px;
+   margin-right: 12px;
+
+   background-color: transparent;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   border-radius: 4px;
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:focus,
+   &:focus-visible {
+      color: $white-main-color;
+      border: 1px solid $accent-color;
+      outline: none;
+   }
+   &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+   }
+}
